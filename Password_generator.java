@@ -29,11 +29,11 @@ public class Password_generator {
         int pos = 0;
         for (int i = 0; i < len; i++) {
             if (c == i) {
-                pos = i-1;
+                pos = i - 1;
                 System.out.println("Password is :");
             }
         }
-        pw=""+name.charAt(0)+mobile%10+sum+special[pos]+name.charAt(len-1);
+        pw = "" + name.charAt(0) + mobile % 10 + sum + special[pos] + name.charAt(len - 1);
         System.out.println(pw);
     }
 }

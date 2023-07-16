@@ -1,4 +1,3 @@
-
 //Design a java code for implementing bianry serach,pass array as a parameter to the method
 
 import java.util.*;
@@ -19,31 +18,26 @@ public class binarySearch {
         int x = sc.nextInt();
         // Calling the method
         binarySearch ob = new binarySearch();
-        int ans = ob.binarySear(arr, x,0, n - 1);
-        if (ans == -1) 
-        {
+        int ans = ob.binarySear(arr, x, 0, n - 1);
+        if (ans == -1) {
             System.out.println("Element is not present in the array");
-        }
-        else 
-        {
-            System.out.println("Element found at " + (ans+1) + " position");
+        } else {
+            System.out.println("Element found at " + (ans + 1) + " position");
         }
 
         sc.close();
 
     }
 
-    int binarySear(int a[], int s, int low, int high) 
-    {
-        if(high>=low)
-        {
-        int mid = (low + high) / 2;
-        if (a[mid] == s)
-            return mid;
-        if (a[mid] < s)
-            return binarySear(a, s, mid + 1, high);
-        if (a[mid] > s)
-            return binarySear(a, s, low, mid - 1);
+    int binarySear(int a[], int s, int low, int high) {
+        if (high >= low) {
+            int mid = (low + high) / 2;
+            if (a[mid] == s)
+                return mid;
+            if (a[mid] < s)
+                return binarySear(a, s, mid + 1, high);
+            if (a[mid] > s)
+                return binarySear(a, s, low, mid - 1);
         }
         return -1;
     }

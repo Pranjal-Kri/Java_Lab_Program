@@ -20,7 +20,7 @@ class Binarytree {
 
     // main function
     public static void main(String args[]) {
-        p5 tree = new p5();
+        Binarytree tree = new Binarytree();
         // creating Binary tree
         tree.root = new Node(1);
         tree.root.left = new Node(2);

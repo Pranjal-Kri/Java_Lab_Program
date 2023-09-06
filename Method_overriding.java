@@ -40,6 +40,11 @@ import java.util.*;
         }
 
    }
+   //main method
+    public static void main(String[] args) {
+    transpose obj = new transpose();
+    obj.meth();
+    }
 }
 class transpose extends Method_overriding
 {
@@ -76,9 +81,6 @@ class transpose extends Method_overriding
         System.out.println();
     }
  }
- //main method
-    public static void main(String[] args) {
-    transpose obj = new transpose();
-    obj.meth();
-    }
+ 
+   
 }
